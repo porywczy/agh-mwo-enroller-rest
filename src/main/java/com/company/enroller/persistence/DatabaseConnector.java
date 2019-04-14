@@ -6,6 +6,7 @@ public class DatabaseConnector {
 
 	protected static DatabaseConnector instance = null;
 
+	//singleton
 	public static DatabaseConnector getInstance() {
 		if (instance == null) {
 			instance = new DatabaseConnector();

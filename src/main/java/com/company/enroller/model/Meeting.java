@@ -34,6 +34,7 @@ public class Meeting {
 	@Column
 	private String date;
 
+	//pomijamy informacje o uczestnikach w tym zapytaniu
 	@JsonIgnore
 	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
 	@JoinTable(name = "meeting_participant", joinColumns = { @JoinColumn(name = "meeting_id") }, inverseJoinColumns = {
